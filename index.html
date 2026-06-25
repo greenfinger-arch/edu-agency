@@ -64,16 +64,17 @@
         .feat-box h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 15px; color: var(--color-dark); }
         .feat-box p { color: var(--color-text-muted); font-size: 1.05rem; }
 
-        /* --- 4. 포트폴리오 쇼케이스 (감성 반, 테크 반 템플릿 제안) --- */
+        /* --- 4. 포트폴리오 쇼케이스 (4대 전략 라인업으로 확장) --- */
         .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 40px; }
-        .portfolio-card { group: relative; border-radius: 16px; overflow: hidden; background: #fff; border: 1px solid #e2e8f0; }
-        .port-img-wrap { width: 100%; aspect-ratio: 16/10; background: #e2e8f0; overflow: hidden; position: relative; }
+        .portfolio-card { border-radius: 16px; overflow: hidden; background: #fff; border: 1px solid #e2e8f0; transition: 0.4s; }
+        .portfolio-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.05); border-color: #cbd5e1; }
+        .port-img-wrap { width: 100%; aspect-ratio: 16/9; background: #e2e8f0; overflow: hidden; position: relative; }
         .port-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
         .portfolio-card:hover .port-img-wrap img { transform: scale(1.04); }
-        .port-info { padding: 30px; }
-        .port-tag { font-size: 0.85rem; color: var(--color-brand); font-weight: 700; margin-bottom: 10px; display: inline-block; }
-        .port-info h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 10px; color: var(--color-dark); }
-        .port-info p { color: var(--color-text-muted); font-size: 1rem; }
+        .port-info { padding: 35px; }
+        .port-tag { font-family: var(--font-eng); font-size: 0.8rem; color: var(--color-brand); font-weight: 700; margin-bottom: 12px; display: inline-block; background: rgba(0, 102, 255, 0.05); padding: 4px 10px; border-radius: 4px; letter-spacing: 0.5px; }
+        .port-info h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; color: var(--color-dark); }
+        .port-info p { color: var(--color-text-muted); font-size: 1rem; line-height: 1.65; word-break: keep-all; }
 
         /* --- 5. 실전 리드 폼 (문의 신청서) --- */
         .form-card { max-width: 650px; margin: 0 auto; background: #ffffff; padding: 50px; border-radius: 20px; border: 1px solid #e2e8f0; box-shadow: 0 30px 60px rgba(0,0,0,0.05); }
@@ -152,32 +153,60 @@
         </div>
     </section>
 
+    <!-- 학원 업종별 맞춤형 4대 비즈니스 라인업 섹션 -->
     <section>
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-badge">Design Lineup</span>
-                <h2 class="section-title">클라이언트 성향에 맞춘 <span>두 가지 해석</span></h2>
+                <h2 class="section-title">학원의 규모와 목적에 맞춘 <span>4대 특화 솔루션</span></h2>
             </div>
             
             <div class="grid-2">
+                <!-- 1. 지역 밀착형 패키지 -->
                 <div class="portfolio-card reveal">
                     <div class="port-img-wrap">
                         <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=600&q=80" alt="따뜻한 감성 교육장 템플릿 레이아웃 이미지">
                     </div>
                     <div class="port-info">
-                        <span class="port-tag">TYPE A. Warm & Trust</span>
-                        <h3>따뜻한 스토리텔링 감성 교육장</h3>
-                        <p>부드러운 명조체와 따뜻한 베이지 베이스 컬러링, 원장님의 교육 철학과 고화질 프로필 사진을 고급 매거진 인터뷰 형태로 배치하여 신뢰감을 극대화하는 모델입니다.</p>
+                        <span class="port-tag">TYPE A. Local & Trust</span>
+                        <h3>[지역 밀착형] 1인 교육원 & 소형 학원</h3>
+                        <p>요양보호사·간호조무사 교육원 및 동네 보습학원에 최적화된 모델입니다. 부드러운 컬러감과 원장님의 교육 철학을 매거진 인터뷰 형태로 전면 배치하여 신뢰감을 주고, 지역 수강생들의 즉각적인 전화 유도를 이끌어냅니다.</p>
                     </div>
                 </div>
+
+                <!-- 2. 합격 패스형 패키지 -->
                 <div class="portfolio-card reveal">
                     <div class="port-img-wrap">
                         <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="하이테크 에듀테크 스타일 템플릿 레이아웃 이미지">
                     </div>
                     <div class="port-info">
-                        <span class="port-tag">TYPE B. Hi-Tech & Edutech</span>
-                        <h3>단기 합격 패스 에듀테크 플랫폼</h3>
-                        <p>다크 모드 인터페이스와 선명한 액센트 컬러, 마감 임박 타이머 및 CBT 모의고사실 시스템을 강조하여 타 학원을 압도하는 전문성을 부각시키는 모델입니다.</p>
+                        <span class="port-tag">TYPE B. Pass & Edutech</span>
+                        <h3>[단기 합격형] 성인 자격증 & 입시 학원</h3>
+                        <p>공인중개사, 기술 자격증, 국비지원 직업전문학교용 고효율 모델입니다. 선명한 액센트 컬러 레이아웃과 CBT 모의고사 시스템 강조, 국비지원 환급금 조회 폼 및 마감 타이머를 탑재하여 상담 DB 수집률을 극대화합니다.</p>
+                    </div>
+                </div>
+
+                <!-- 3. 전문가 브랜딩형 패키지 -->
+                <div class="portfolio-card reveal">
+                    <div class="port-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="전문가 브랜딩 포트폴리오 스타일 이미지">
+                    </div>
+                    <div class="port-info">
+                        <span class="port-tag">TYPE C. Premium Branding</span>
+                        <h3>[전문가 브랜딩] 취업 & 아카데미 전문</h3>
+                        <p>IT·코딩 부트캠프, 디자인·영상 편집학원, 기획 강사 양성 과정에 맞춘 럭셔리 미니멀리즘 모델입니다. 출신 강사진 라인업과 선배들의 실제 취업 성공 포트폴리오를 시각적으로 강조해 높은 수강료의 가치를 완벽하게 정당화합니다.</p>
+                    </div>
+                </div>
+
+                <!-- 4. 주니어 감성형 패키지 -->
+                <div class="portfolio-card reveal">
+                    <div class="port-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" alt="키즈 예체능 학원 스타일 이미지">
+                    </div>
+                    <div class="port-info">
+                        <span class="port-tag">TYPE D. Junior & Care</span>
+                        <h3>[주니어 케어] 예체능 & 키즈 교육원</h3>
+                        <p>어린이 수영장, 유아 미술·음악 학원, 태권도장 맞춤형 모델입니다. 실질적 결정을 내리는 3040 학부모들의 취향에 맞춘 깔끔한 파스텔톤 디자인과 안심 케어 통학 버스 노선 안내, 아이들의 생생한 활동 갤러리가 포함됩니다.</p>
                     </div>
                 </div>
             </div>
@@ -202,11 +231,13 @@
                         <input type="tel" id="client_phone" name="연락처" required placeholder="010-1234-5678">
                     </div>
                     <div class="form-group">
-                        <label for="project_type">희망 웹사이트 컨셉</label>
+                        <label for="project_type">희망 웹사이트 솔루션 라인업</label>
                         <select id="project_type" name="선호컨셉">
-                            <option value="따뜻한 감성 스토리텔링형">TYPE A. 따뜻한 감성 스토리텔링형</option>
-                            <option value="단기합격 패스 하이테크형">TYPE B. 단기합격 패스 하이테크형</option>
-                            <option value="아직 잘 모르겠음 (상담 후 결정)">아직 잘 모르겠음 (상담 후 결정)</option>
+                            <option value="TYPE A. [지역밀착형] 1인 교육원/소형학원 패키지">TYPE A. [지역밀착형] 1인 교육원 / 소형학원 패키지</option>
+                            <option value="TYPE B. [단기합격형] 성인자격증/입시학원 패키지">TYPE B. [단기합격형] 성인자격증 / 입시학원 패키지</option>
+                            <option value="TYPE C. [전문가브랜딩] 취업/아카데미전문 패키지">TYPE C. [전문가브랜딩] 취업 / 아카데미전문 패키지</option>
+                            <option value="TYPE D. [주니어케어] 예체능/키즈교육원 패키지">TYPE D. [주니어케어] 예체능 / 키즈교육원 패키지</option>
+                            <option value="아직 잘 모르겠음 (미팅 후 하이브리드 커스텀 설계)">아직 잘 모르겠음 (미팅 후 하이브리드 커스텀 설계)</option>
                         </select>
                     </div>
                     <div class="form-group">
